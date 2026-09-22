@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Nazwa ♡</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- =====================================================
+       MUSIC
+       Ganti "lagu.mp3" dengan source lagu kamu.
+       Tidak ada tombol musik.
+  ====================================================== -->
+  <audio id="birthdayMusic" autoplay loop preload="auto">
+    <source src="SemuaDirayakan.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Background decoration -->
+  <div class="page-decor" aria-hidden="true">
+    <span class="star star-1">✦</span>
+    <span class="star star-2">✧</span>
+    <span class="star star-3">✦</span>
+    <span class="star star-4">✧</span>
+    <span class="star star-5">·</span>
+    <span class="star star-6">·</span>
+    <img src="decorate_flower.png" class="decor-flower flower-left" alt="">
+    <img src="decorate_flower.png" class="decor-flower flower-right" alt="">
+  </div>
+
+  <main>
+    <!-- ===================================================
+         01. OPENING
+    ==================================================== -->
+    <section class="hero" id="opening">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A little something for you ♡</p>
+        <h1>Happy<br><span>Birthday</span></h1>
+        <p class="hero-name">Nazwa</p>
+
+        <p class="hero-description">
+          Aku punya sesuatu buat kamu.<br>
+          Tapi jangan buru-buru ya...
+        </p>
+
+        <a href="#memory" class="main-button">
+          Mulai Perjalanan
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+
+        <div class="hero-date">
+          <span></span>
+          17 September
+          <span></span>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit-dot dot-one"></div>
+        <div class="orbit-dot dot-two"></div>
+
+        <div class="main-photo-frame">
+          <img src="Foto wewek.jpeg" class="main-photo" alt="Foto Nazwa">
+          <img src="hat.png" class="birthday-hat" alt="">
+          <img src="smiley_icon.png" class="smiley" alt="">
+        </div>
+
+        <img src="balloon1.png" class="balloon balloon-one" alt="">
+        <img src="balloon2.png" class="balloon balloon-two" alt="">
+        <img src="mewmew.gif" class="tiny-decoration" alt="">
+      </div>
+
+      <a href="#memory" class="scroll-hint" aria-label="Scroll ke memories">
+        <span>scroll slowly</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ===================================================
+         02. MEMORY GALLERY
+         10 SLOT FOTO
+         5 slot pertama memiliki caption.
+         Ganti nama file pada src sesuai foto kamu.
+    ==================================================== -->
+    <section class="memory-section" id="memory">
+      <div class="section-container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">chapter 01 · memories</p>
+          <h2>A little piece of<br><span>memories</span></h2>
+          <p>Take your time. There are a few memories waiting for you here.</p>
+        </div>
+
+        <div class="memory-intro reveal">
+          <div class="memory-line"></div>
+          <p>10 little moments</p>
+          <div class="memory-line"></div>
+        </div>
+
+        <div class="memory-grid">
+          <!-- FOTO 01 - CAPTION -->
+          <article class="memory-card reveal">
+            <div class="memory-photo">
+              <img src="Foto w1.jpeg" alt="Memory 01">
+              <span class="photo-number">01</span>
+              <span class="photo-label">a little memory</span>
+            </div>
+            <div class="memory-caption">
+              <span>memory no. 01</span>
+              <p>Yakult mah lebih tinggi dari kita</p>
+            </div>
+          </article>
+
+          <!-- FOTO 02 - CAPTION -->
+          <article class="memory-card reveal memory-offset">
+            <div class="memory-photo">
+              <img src="Foto w8.jpeg" alt="Memory 02">
+              <span class="photo-number">02</span>
+              <span class="photo-label">a little memory</span>
+            </div>
+            <div class="memory-caption">
+              <span>memory no. 02</span>
+              <p>Badut Oppo</p>
+            </div>
+          </article>
+
+          <!-- FOTO 03 - CAPTION -->
+          <article class="memory-card reveal">
+            <div class="memory-photo">
+              <img src="Foto w5.jpeg" alt="Memory 03">
+              <span class="photo-number">03</span>
+              <span class="photo-label">a little memory</span>
+            </div>
+            <div class="memory-caption">
+              <span>memory no. 03</span>
+              <p>Ini yg waktu kita main motor motoran di tl</p>
+            </div>
+          </article>
+
+          <!-- FOTO 04 - CAPTION -->
+          <article class="memory-card reveal memory-offset">
+            <div class="memory-photo">
+              <img src="Foto w6.jpeg" alt="Memory 04">
+              <span class="photo-number">04</span>
+              <span class="photo-label">a little memory</span>
+            </div>
+            <div class="memory-caption">
+              <span>memory no. 04</span>
+              <p>Ni foto udah lama bgt jir</p>
+            </div>
+          </article>
+
+          <!-- FOTO 05 - CAPTION -->
+          <article class="memory-card reveal">
+            <div class="memory-photo">
+              <img src="Foto w9.jpeg" alt="Memory 05">
+              <span class="photo-number">05</span>
+              <span class="photo-label">a little memory</span>
+            </div>
+            <div class="memory-caption">
+              <span>memory no. 05</span>
+              <p>Kayak orang bego wkwkw</p>
+            </div>
+          </article>
+
+          <!-- FOTO 06 - TANPA CAPTION -->
+          <article class="memory-card reveal memory-no-caption">
+            <div class="memory-photo">
+              <img src="Foto w7.jpeg" alt="Memory 06">
+              <span class="photo-number">06</span>
+              <span class="photo-label">just a moment</span>
+            </div>
+          </article>
+
+          <!-- FOTO 07 - TANPA CAPTION -->
+          <article class="memory-card reveal memory-no-caption memory-offset">
+            <div class="memory-photo">
+              <img src="Foto w3.jpeg" alt="Memory 07">
+              <span class="photo-number">07</span>
+              <span class="photo-label">just a moment</span>
+            </div>
+          </article>
+
+          <!-- FOTO 08 - TANPA CAPTION -->
+          <article class="memory-card reveal memory-no-caption">
+            <div class="memory-photo">
+              <img src="Foto w10.jpeg" alt="Memory 08">
+              <span class="photo-number">08</span>
+              <span class="photo-label">just a moment</span>
+            </div>
+          </article>
+
+          <!-- FOTO 09 - TANPA CAPTION -->
+          <article class="memory-card reveal memory-no-caption memory-offset">
+            <div class="memory-photo">
+              <img src="Foto w2.jpeg" alt="Memory 09">
+              <span class="photo-number">09</span>
+              <span class="photo-label">just a moment</span>
+            </div>
+          </article>
+
+          <!-- FOTO 10 - TANPA CAPTION -->
+          <article class="memory-card reveal memory-no-caption">
+            <div class="memory-photo">
+              <img src="Foto w4.jpeg" alt="Memory 10">
+              <span class="photo-number">10</span>
+              <span class="photo-label">just a moment</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="memory-end reveal">
+          <p>Kalau udah selesai liat-liat...</p>
+          <a href="#quiz" class="continue-link">
+            lanjut ke quiz yaak
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         03. MINI QUIZ
+    ==================================================== -->
+    <section class="quiz-section" id="quiz">
+      <div class="section-container quiz-container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">chapter 02 · mini quiz</p>
+          <h2>Quiz <span>Tak berhadiah</span></h2>
+          <p>Jawab semuanya dulu yaa. Jangan asal pencet 👀</p>
+        </div>
+
+        <div class="quiz-card reveal">
+          <div class="quiz-top">
+            <div>
+              <span class="quiz-mini-label">YOUR PROGRESS</span>
+              <p id="quizQuestionLabel">Question 1 of 3</p>
+            </div>
+            <div class="quiz-score">
+              <span>score</span>
+              <strong id="quizScore">0</strong>
+              <small>/ 4</small>
+            </div>
+          </div>
+
+          <div class="quiz-progress-track">
+            <div class="quiz-progress-bar" id="quizProgressBar"></div>
+          </div>
+
+          <div class="questions-wrap">
+            <!-- QUESTION 1 -->
+            <div class="quiz-question active" data-question="1">
+              <div class="question-index">01</div>
+              <h3>1 + 1 = ...?</h3>
+              <p class="question-hint">Ini harusnya gampang lah ya 😭</p>
+
+              <div class="answer-options two-columns">
+                <button type="button" class="answer-option" data-correct="false">
+                  <span class="option-letter">A</span>
+                  <span>3</span>
+                </button>
+                <button type="button" class="answer-option" data-correct="true">
+                  <span class="option-letter">B</span>
+                  <span>2</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="quiz-question active" data-question="2">
+              <div class="question-index">02</div>
+              <h3>Mendung belum tentu...?</h3>
+              <p class="question-hint">Ez lah ini yakann</p>
+
+              <div class="answer-options two-columns">
+                <button type="button" class="answer-option" data-correct="false">
+                  <span class="option-letter">A</span>
+                  <span>Hujan</span>
+                </button>
+                <button type="button" class="answer-option" data-correct="true">
+                  <span class="option-letter">B</span>
+                  <span>Wudhu</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- QUESTION 2 -->
+            <div class="quiz-question" data-question="3">
+              <div class="question-index">03</div>
+              <h3>Minuman favorit?</h3>
+              <p class="question-hint">Choose wisely ☕🍵</p>
+
+              <div class="answer-options three-columns">
+                <button type="button" class="answer-option" data-correct="false">
+                  <span class="option-emoji">🍵</span>
+                  <span>Matcha</span>
+                </button>
+                <button type="button" class="answer-option" data-correct="true">
+                  <span class="option-emoji">☕</span>
+                  <span>Kopi</span>
+                </button>
+                <button type="button" class="answer-option" data-correct="false">
+                  <span class="option-emoji">🫖</span>
+                  <span>Teh</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- QUESTION 3 -->
+            <div class="quiz-question" data-question="4">
+              <div class="question-index">04</div>
+              <h3>Kalau lagi badmood wewek biasanya...</h3>
+              <p class="question-hint">Hmm... yang mana ya? 👀</p>
+
+              <div class="answer-options four-options">
+                <button type="button" class="answer-option" data-correct="true">
+                  <span class="option-emoji">😴</span>
+                  <span>Bobok</span>
+                </button>
+                <button type="button" class="answer-option" data-correct="true">
+                  <span class="option-emoji">🎧</span>
+                  <span>Dengerin lagu</span>
+                </button>
+                <button type="button" class="answer-option" data-correct="true">
+                  <span class="option-emoji">🍜</span>
+                  <span>Cari makanan</span>
+                </button>
+                <button type="button" class="answer-option special-answer" data-correct="true">
+                  <span class="option-emoji">❤️</span>
+                  <span>Mikirin Atira yg imut & lucuk</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         04. ACHIEVEMENT ENVELOPE
+         Muncul setelah quiz selesai.
+    ==================================================== -->
+    <section class="achievement-section" id="achievement" aria-hidden="true">
+      <div class="achievement-rays" aria-hidden="true"></div>
+      <div class="achievement-spark spark-a">✦</div>
+      <div class="achievement-spark spark-b">✧</div>
+      <div class="achievement-spark spark-c">✦</div>
+      <div class="achievement-spark spark-d">·</div>
+
+      <div class="achievement-content">
+        <p class="achievement-label">✦ achievement unlocked ✦</p>
+
+        <div class="envelope-stage">
+          <div class="tiny-light"></div>
+          <div class="envelope-wrapper">
+            <div class="envelope-shadow"></div>
+            <div class="envelope">
+              <div class="envelope-back"></div>
+              <div class="letter-sheet"></div>
+              <div class="envelope-flap"></div>
+              <div class="envelope-front"></div>
+              <div class="envelope-seal">♡</div>
+            </div>
+          </div>
+        </div>
+
+        <h2>You unlocked<br><span>something special</span></h2>
+        <p class="achievement-text">
+          Karena kamu sudah menyelesaikan mini quiz...<br>
+          ada satu hal lagi yang harus kamu buka.
+        </p>
+
+        <button type="button" class="open-letter-button" id="openLetterButton">
+          Buka suratnya
+          <i class="fa-solid fa-heart"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         05. BIRTHDAY LETTER
+         Tidak ada bagian after-letter / before-you-leave.
+    ==================================================== -->
+    <section class="letter-section" id="letter">
+      <div class="letter-container">
+        <div class="letter-heading reveal">
+          <p class="eyebrow">final chapter · for you</p>
+          <h2>A letter<br><span>for Nazwa</span></h2>
+          <p class="letter-heading-note">
+            A small letter for a very special birthday girl ♡
+          </p>
+
+          <img src="mewmew.gif" class="cute-one" alt="">
+          <img src="mewmew.gif" class="cute-two" alt="">
+        </div>
+
+        <article class="letter-paper reveal">
+          <div class="paper-border"></div>
+
+          <div class="letter-paper-top">
+            <span>17 · SEPTEMBER</span>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="letter-content">
+            <p class="letter-greeting">Dear Nazwa,</p>
+
+            <p>
+              Happy birthday Wewekk🥳🎂🥳
+            </p>
+
+            <p>
+              Maaf yaa karena terlambat ngucapinnyaa dan maaf juga karna kayaknya
+              kado dariku gagal jirr, tapi aku kasii kado itu supaya kau tetep
+              ngejalanin hari hari dengan ngelakuin hal yang positif yaa wek.
+            </p>
+
+            <p>
+              Semoga apapun keputusan maupun hal yang terjadi samamu di umur yg
+              baru ini tetep buat kau bahagia selalu yaa.
+            </p>
+
+            <p>
+              Semangat teruss wekk ❤️
+            </p>
+
+            <div class="letter-ending">
+              <span>with love,</span>
+              <strong>someone who cares ♡</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    /* =====================================================
+       MUSIC AUTOPLAY
+       Browser dapat memblokir autoplay audio bersuara.
+       Jika diblokir, audio akan dicoba lagi saat interaksi
+       pertama tanpa membutuhkan tombol musik.
+    ====================================================== */
+    const birthdayMusic = document.getElementById("birthdayMusic");
+    birthdayMusic.volume = 0.35;
+
+    function tryPlayMusic() {
+      birthdayMusic.play().catch(() => {
+        console.log("Autoplay diblokir browser. Menunggu interaksi pengguna.");
+      });
+    }
+
+    window.addEventListener("load", tryPlayMusic);
+
+    function resumeMusicOnce() {
+      birthdayMusic.play().catch(() => {});
+      document.removeEventListener("click", resumeMusicOnce);
+      document.removeEventListener("touchstart", resumeMusicOnce);
+      document.removeEventListener("keydown", resumeMusicOnce);
+    }
+
+    document.addEventListener("click", resumeMusicOnce);
+    document.addEventListener("touchstart", resumeMusicOnce, { passive: true });
+    document.addEventListener("keydown", resumeMusicOnce);
+
+    /* =====================================================
+       SCROLL REVEAL
+    ====================================================== */
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    revealElements.forEach((element) => revealObserver.observe(element));
+
+    /* =====================================================
+       MINI QUIZ
+    ====================================================== */
+    const quizQuestions = [...document.querySelectorAll(".quiz-question")];
+    const answerButtons = document.querySelectorAll(".answer-option");
+    const quizProgressBar = document.getElementById("quizProgressBar");
+    const quizQuestionLabel = document.getElementById("quizQuestionLabel");
+    const quizScore = document.getElementById("quizScore");
+    const quizFeedback = document.getElementById("quizFeedback");
+    const achievementSection = document.getElementById("achievement");
+
+    let currentQuestion = 0;
+    let score = 0;
+    let quizCompleted = false;
+
+    function updateQuizUI() {
+      const currentNumber = currentQuestion + 1;
+      const progress = (currentNumber / quizQuestions.length) * 100;
+
+      quizQuestionLabel.textContent =
+        `Question ${currentNumber} of ${quizQuestions.length}`;
+      quizScore.textContent = score;
+      quizProgressBar.style.width = `${progress}%`;
+    }
+
+    function showQuizQuestion(index) {
+      quizQuestions.forEach((question, questionIndex) => {
+        question.classList.toggle("active", questionIndex === index);
+      });
+
+      updateQuizUI();
+    }
+
+    function finishQuiz() {
+      quizCompleted = true;
+
+      quizQuestionLabel.textContent = "Quiz completed!";
+      quizScore.textContent = score;
+      quizProgressBar.style.width = "100%";
+      quizFeedback.textContent = "Yeyy, kamu berhasil menyelesaikan mini quiz! 💗";
+
+      setTimeout(() => {
+        achievementSection.classList.add("unlocked");
+        achievementSection.setAttribute("aria-hidden", "false");
+        achievementSection.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      }, 850);
+    }
+
+    answerButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        if (quizCompleted) return;
+
+        const currentQuestionElement = button.closest(".quiz-question");
+        const buttonsInQuestion = currentQuestionElement.querySelectorAll(".answer-option");
+        const isCorrect = button.dataset.correct === "true";
+
+        buttonsInQuestion.forEach((item) => {
+          item.disabled = true;
+        });
+
+        if (isCorrect) {
+          score += 1;
+          button.classList.add("correct");
+          quizFeedback.textContent = "Benarrr 💗";
+        } else {
+          button.classList.add("wrong");
+          quizFeedback.textContent = "Hehe, bukan yang itu 😭";
+
+          const correctButton = currentQuestionElement.querySelector('[data-correct="true"]');
+          if (correctButton) {
+            correctButton.classList.add("show-correct");
+          }
+        }
+
+        quizScore.textContent = score;
+
+        setTimeout(() => {
+          quizFeedback.textContent = "";
+
+          if (currentQuestion < quizQuestions.length - 1) {
+            currentQuestion += 1;
+            showQuizQuestion(currentQuestion);
+          } else {
+            finishQuiz();
+          }
+        }, 850);
+      });
+    });
+
+    updateQuizUI();
+
+    /* =====================================================
+       OPEN LETTER
+    ====================================================== */
+    const openLetterButton = document.getElementById("openLetterButton");
+    const letterSection = document.getElementById("letter");
+
+    openLetterButton.addEventListener("click", () => {
+      letterSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+  </script>
+</body>
+</html>
